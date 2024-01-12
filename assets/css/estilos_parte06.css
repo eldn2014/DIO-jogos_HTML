@@ -1,0 +1,65 @@
+.exemplo01{
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    background-image: url('../imagens/paisagem-florestal_71767-127.avif');
+
+}
+
+.exemplo02{
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    background-image: linear-gradient(aqua, violet, blue);
+
+}
+
+.exemplo03{
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    background-image: radial-gradient(aqua, violet, blue);
+
+}
+
+.exemplo04{
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    background-image: repeating-linear-gradient(to bottom,lightblue 0 20px, aqua 20px 40px, blue 40px 60px);
+}
+
+.exemplo05{
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    background-image: repeating-radial-gradient( blue 0 5px, lightblue 5px 10px, aqua 10px 15px);
+}
+
+.exe-bksize{
+    width: 300px;
+    height: 300px;
+    background-image: url(../imagens/paisagem-florestal_71767-127.avif);
+}
+
+#bk-cover{
+    background-size: cover;
+}
+
+#bk-contain{
+    background-size: contain;
+}
+
+#bk-tamanho{
+    background-size: 50%;
+    /* background-size: 200px;*/
+}
+
+#bk-exemplo-x-y{
+    background-size: 200px 250px;
+}
+
+#bk-exemplodecamadas{
+    background-image: url(../imagens/leaves-5949884_1280.png),url(../imagens/paisagem-florestal_71767-127.avif);
+    background-size: 100px , cover;
+}
