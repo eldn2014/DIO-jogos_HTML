@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturas</title>
+    <link rel="stylesheet" href="assets/css/estilo_parte5.css">
+</head>
+<body>
+
+<h1>Estudando Estruturas</h1>
+
+<p>Iremos estudar agr as estruturas <br><br>
+    <strong>formatadores de textos:</strong> <xmp><strong>, <i>,<b>,<u>,<font></xmp>
+    <strong>Tags: </strong><xmp> <Div>,<span>,<fieldset>,<embed>, <iframe></xmp>
+  
+    </p>
+
+    <h3>*Formatadores de textos</h3>
+    <strong>usando a tag strong deixa o texto em negrito</strong> <br>
+    <b>usando a tag b deixa o texto em negrito</b> <br>
+    <p>quando falamos de programação simples as tags b e strong são identicas, porem semanticamente <br>
+        falando e pensando na acessibilidade, quando queremos deixar um texto em negrito usamos o strong.
+    </p><br>
+
+    <i>usando a tag i deixa o texto em italico</i> <br>
+    <u>usando a tag u deixa o texto sublinhado</u> <br>
+    <sub>usando a tag sub deixa o texto menor e alocado na parte inferior</sub> <br>
+    <mark> usando a tag mark deixa o texto grifado</mark> <br>
+    <sup>usando a tag sup deixa o texto maior e alocado na parte superior</sup> <br>
+    <p>as tags sup e sub são muito usandas em representação de numeros cientificos <br>
+    exemplo: 10 <sup>2</sup>, 10<sub>3</sub></p>
+    <blockquote> a tag blockquote é usada para referenciar citações de texto, <br> ela deixa um 
+        espaçamento do lado esquerdo.
+    </blockquote>
+
+
+   <p>usando a tag font por si so ela não faz nada, pois ela precisa de atributos <br>
+esses atributos são: <br><br>
+<font color="#57a041" >color: define a cor do texto</font> <br>
+<font face="'trebuchet MS', arial">face: fonte do texto(formatação trebuchet se não achart formata arial) </font><br>
+<font face="arial">face: fonte do texto(formatação arial) </font><br>
+</p> 
+
+    
+<h3>*Div e Span</h3>
+
+<div> a div é muito usanda em estruturação de sites, onde servem de esqueleto, para manipular com 
+    acestividade no CSS é aconselhavel que cada div possua um id ou class.
+</div>
+
+<span> a span diferente da div não é display block, ela não quebra linha, muito utiel para manipular trecho de textos</span>
+
+<h3>*Fieldset</h3>
+<p>a tag fieldset trabalha em conjunto com a tag formulario, muito usada de forma estutural, <br>
+ela é uma caixinha que mostra no display do usuario, ela envolve o formulario que esta dentro dela</p>
+
+<fieldset>
+    <legend>Dados</legend>
+    Nome: <input type="text"><br><br>
+    idade: <input type="number">
+
+</fieldset>
+
+<h3>*Embeds</h3>
+
+<embed src="imagens/paisagem-florestal_71767-127.avif"> 
+
+    <p>o embed é uma tag que esta entrando em desuso nos sites criados recentemente, ela serve para por links de videos imagens e etc. <br>
+        a mesma caiu em desuso devido a evolução da linguagem, que surgiu novas tags.
+
+    </p>
+    
+
+    <h3>*Iframes</h3>
+
+    <p> o iframe temos que ter cuidado com a questão seguraça, o iframe permite criar uma janela dentro do seu site, <br>
+    onde o usuario pode navegar em outro site dentro dessa janela.</p>
+
+    <iframe src="http://dio.me" width="600" height="600"></iframe>
+
+
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos CSS</title>
+    <link rel="stylesheet" href="assets/css/estilo_parte5.css">
+    
+</head>
+<body>
+    <h1>Fundamentos CSS</h1>
+
+    <p>Cascading style sheet ou CSS não é uma linguagem de programação mas sim uma linguagem de estilos. <br>
+    *O css inline usamos o atributo style nas tags e dentro dela declamos o CSS. o Css inline tem mais prioridade que o css interno<br>
+    *O css Interno vai dentro da tag head, criamos a tag style e nela declaramos o css. <br>
+    *o Css Externo é um arquivo do tipo CSS que  é lincado no documento html. atraves da tag link dentro de head, lincamos esses dois aruivos, <br>
+
+    </p>
+    <h3>Seletores de tag ou de tipo</h3>
+
+    <p>no Css possuimos os seletores do seguinte modo:</p>
+    <div>
+        <ul>
+            <li><b>Seletor po tipo:</b> o seletor Por tag ou tipo busca a tag definida e nela atribui todos os estilos definidos.</li>
+            <li><b>seletor por ID (*):</b> o seletor por id buscara no html todos os atributos id que foram definidos e que são iguais ao do arquivo css e nessas tags que possuem o id igual aplicara os estilos.</li>
+            <li><b>Seletor por classe(.):</b> o seletor de classe funciona similar ao is so que em vez de buscar o Id buscará o atributo Class</li>
+            <li><b>seletor universal(*):</b>seleciona todos as tags do html e aplica os estilos</li>
+            <li><b>seletor por atributo[atributo]:</b> Busca todas as tags que possuem o atributo e ou valor definido</li>
+            <ul>
+                <li><b>[atributo]^="valor":</b> busca todos os atributos definidos e no valor se encontrar o prefixo</li>
+                <li><b>[atributo]$="valor":</b> busca todos os atributos definidos e no valor se encontrar o sufixo</li>
+                <li><b>[atributo]~="valor":</b> busca todos os atributos definidos e no valor procurara um exato ou separado por espaço.quem é responsavel por isso é o sinal de Til(~)</li>
+                <li><b>[atributo]|="valor":</b> busca todos os atributos definidos e no valor procurara um exato ou seguido por menos(-).quem é responsavel por isso é o sinal de pipe(|)</li>
+            </ul>
+        </ul>
+    </div>
+
+    <h3>Combinadores e Agrupadores</h3>
+    <p>podemos agrupar e combinar os seletores das seguintes formas e regras:</p>
+
+    <div>
+        <ul>
+            <li><b>agrupamento:</b> para agupar os seletores usamos a virgula(,)que faz o trabalho de OU, tudo junto que sem espaçamento(ex: P#teste) que faz o trabalho de E.</li>
+            <li><b>Combinador descendente ou sub-itens:</b> usamos o espaço e faz o trabalho de um se, se eu tenho o seletor x se dentro dessa tag x ou se em algum filho dela eu vou atribuir a esse filho o estilo</li>
+            <li><b>Combinador Filho:(>)</b> esse ele combina o filho direto do seletor a esquerda do sinal de maior(>)</li>
+            <li><b>Combinador Irmão adjacente(+):</b> esse ele compina tudo que é o primeiro irmão direto do seletor que esta a esquerda</li>
+            <li><b>Combinador irmão geral(~):</b>esse ele compina tudo que é irmão do seletor que esta a esquerda</li>
+        </ul>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="assets/css/estilo_parte5.css">
+</head>
+<body>
+    <h1>Olá Eu sou a pagina 2</h1>
+    <h3>apresenatando as tags de formulario</h3>
+    
+    <p>iniciaremos com a tag form <br>
+        o name é como se fosse o id do formulario <br>
+        o method é o metodo de postagen das informações, onde: <br>
+        <Strong>POST:</Strong> mais seguro pois envias os conteudo do formulario via encapsulamento. <br>
+        <Strong>GET:</Strong> menos seguro, envias os conteudos do formulario via URL. <br>
+        o target define se blank abrira em uma nova aba, se self na mesma aba <br>
+        o autocomplete se On permite que o navegador insira as senhas salvas, se off não permite que o navegador insira as senhas salvas.
+
+    </p>
+
+    <form name="Cadastro" target="_blank" method="post" action="#">
+        Nome: <input type="text" name="Nome"><br>
+        Idade: <input type="number" name="Idade"><br>
+        Senha: <input type="password" name="Senha"><br>
+        <button type="submit">Enviar</button>
+    </form>
+
+
+    <h3> Agora vamos aos tipos de inputs </h3>
+    <p>o input tipo text é um label que aceita todos os caracteres</p>
+    Campo TEXT:<input type="text">
+
+    <p>o input tipo number aceita apenas numeros, <br>
+    o MIN: o numero minimo possivel <br>
+    o MAX: o numero maximo possivel <br>
+    o step: o quanto que ao ser rolado o scroll ira pular no campo </p>
+    Campo Number: <input type="number" min="0" step="2" max="100">
+
+    <p>o input tipo Range monta uma barra de arrasto</p>
+    Campo Range<input type="range" max="100" value="0">
+
+    <p>o input tipo color abre uma caixa de dialogo de cor para ser selecionada</p>
+    campo Color: <input type="color">
+
+    <p>o input tipo email abre um campo de digitação onde aceita apenas email</p>
+    Campo e-mail: <input type="email">
+
+    <p>o input tipo URL abre um campo de digitação onde aceita apenas Link de URL</p>
+    Campo URL: <input type="url">
+
+    <p>o input tipo Date abre um calendario para escolher a data</p>
+    Campo Date: <input type="date">
+
+    <p>o input do tipo week ele permite que o usuario selecione a semana</p>
+    Campo Week: <input type="Week">
+
+    <p>o input do tipo month ele permite que o usuario selecione o mes</p>
+    campo Month: <input type="month">
+
+    <p>o input do tipo checkbox apartece o quadradinho para o usuario selecionar quantos quiser</p>
+    Campo Checkbox: <input type="checkbox" name=" test"><input type="checkbox" name=" test"><input type="checkbox" name=" test">
+
+    <p>o input do tipo radio apartece a bolinha para o usuario selecionar apenas um porem o atributo nome tem que ser igual</p>
+    Campo Radio: <input type="radio" name="teste">
+                 <input type="radio" name="teste">
+                 <input type="radio" name="teste">
+
+    <p>o input do tipo hidden não aparece para o usuario digitar</p>
+    Campo Hidden<input type="hidden">
+
+    <p>o input do tipo file abre um janela pora escolha de envio de arquivos, com o atributo multiple permite upar mais de um arquivo caso contratio permitira apenas 1</p>
+    Campo File: <input type="file" multiple>
+
+    <p>O campo search é um campo de busca onde o usuario digita o texto e tem a opção de apagar clicando no x</p>
+    Campo Search: <input type="search">
+
+
+    
+    <p>input tipo Button, faz a mesma coisa que a tag button porem com menos opções</p>
+   Campo Button: <input type="button" value="Enviar">
+
+   <h3> Agora vamos nos aprofundar nos inputs de checkbox e radio button</h3>
+        <p>no imput do tipo checkbox para agilizarmos o processo do envio ao servidor, no nome colocamos o nome de variavel desejada
+            porem devemos por também o colchetes no final pois assim o sevidor entende que estamso enviando uma lista,
+            caso seja enviado sem o colchetes o servidor vai entender que é uma variavel normal e vai pegar apenas a ultima opção
+            selecionada.
+        </p>
+        <p><strong>exemplo errado:</strong>
+            <xmp><input type="checkbox" name="opcional" value="queijo"> + queijo <br></xmp>
+            <xmp><input type="checkbox" name="opcional" value="calabresa"> + calabresa <br></xmp>
+            <xmp><input type="checkbox" name="opcional" value="cebola"> + cebola <br></xmp> <br>
+
+            da forma acima o servidor entenderá que a variavel opcional será alterada 3 vezes e pegara apenas o ultimo caso os 3 opcionais
+            estiverem selecionados.
+        </p>
+
+        <p><strong>exemplo Certo:</strong>
+            <xmp><input type="checkbox" name="opcional[]" value="queijo"> + queijo <br></xmp>
+            <xmp><input type="checkbox" name="opcional[]" value="calabresa"> + calabresa <br></xmp>
+            <xmp><input type="checkbox" name="opcional[]" value="cebola"> + cebola <br></xmp> <br>
+
+            da forma acima o servidor recebera um array(vetor) com as opções selecionadas, digamos que as 3 opções foram selecionadas o array
+            enviado será: opcional["queijo", "calabresa","cebola"]. 
+        </p>
+        <p>atente-se apenas que no method no formulario tem que ser o post. no disabel a caixinha fica inselecionavel.</p>
+        <p>No radio buton não temos essa preocupação acima pois como é apenas uma opção que vai ser enviada, temos apenas que agrupar asopções
+            que são iguais com o mesmo Name.
+        </p>
+        <p>
+            <xmp><input type="radio" name="borda" value="Sim">sim<br></xmp>
+            <xmp><input type="radio" name="borda" value="Nao">não</xmp>
+        </p>
+
+        <h3> Agora vamos nos aprofundar nos buttons</h3>
+        <p> o button type button so funciona se for adicionado o JavaScript nele caso contrario
+            é inutil. <br>
+            
+            o button type reset limpa os campos do form que ele pertence <br>
+
+            o button type submit faz o envio das informações contidas no formulario
+        </p>
+
+        <h3> Agora vamos nos aprofundar nos selects </h3>
+
+        <p>no form podemos deixar valores predefinidos, usamos a tag select e dentro do select usamos a tag option, caso queira assim como o checkbox 
+            e no file podemos deixa o multiple acionado e no name colocamos o colchete, assim podemos selecionar mais de uma opção.
+        </p>
+
+        <form>
+            Nome: <input type="text" name="Nome"><br>
+            Cargo: <select name="lista_cargos" >
+                <option selected value="">Selecione o Cargo</option>
+                <option value="Administrativo">Administrativo</option>
+                <option value="Gerente">Gerente</option>
+                <option value="Diretor">Diretor</option>
+                <option value="Presidente">Presidente</option>
+
+            </select><br>
+            Assunto: <input type="text" name="Assunto">
+            <button type="submit">Enviar</button>
+
+
+        </form>
+
+        <h3> Agora vamos nos aprofundar no textarea  </h3>
+        <p> o textarea é um campo que serve para por mais informações do que o campo input pode receber, ou seja, ele cabe textos maiores que o campo de imput.
+            
+        </p>
+        <textarea name="mensage"></textarea>
+</body>
+</html>
