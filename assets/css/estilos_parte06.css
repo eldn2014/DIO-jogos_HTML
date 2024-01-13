@@ -63,3 +63,45 @@
     background-image: url(../imagens/leaves-5949884_1280.png),url(../imagens/paisagem-florestal_71767-127.avif);
     background-size: 100px , cover;
 }
+
+#bk-repeat01{
+    background-size: 120px;
+    border: 3PX solid blue;
+
+}
+
+#bk-repeat02{
+    background-size: 120px;
+    background-repeat: repeat-x;
+    border: 3PX solid blue;
+
+}
+
+#bk-repeat03{
+    background-size: 120px;
+    border: 3PX solid blue;
+    background-repeat: repeat-y;
+
+}
+
+#bk-repeat04{
+    background-size: 120px;
+    border: 3PX solid blue;
+    background-repeat: space;
+
+}
+
+#bk-repeat05{
+    background-size: 120px;
+    border: 3PX solid blue;
+    background-repeat: round;
+
+}
+
+
+#bk-repeat06{
+    background-size: 120px;
+    border: 3PX solid blue;
+    background-repeat: no-repeat;
+
+}
