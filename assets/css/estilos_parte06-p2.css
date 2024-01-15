@@ -55,3 +55,34 @@ div{
 #content-box{
     background-origin: content-box;
 }
+
+.exemplo3{
+    width: 300px;
+    height: 300px;
+    color: white;
+    border: 6px dashed darkcyan;
+    padding: 30px;
+    font-size: 40px;
+    font-weight: 900;
+    background-color: coral;
+
+}
+
+#padding-box3{
+    background-clip:padding-box ;
+}
+
+#borde-box3{
+    background-clip: border-box;
+}
+
+#content-box3{
+    background-clip: content-box;
+}
+
+#text-box3{
+    
+    background-clip: text;
+    color: transparent;
+}
+
