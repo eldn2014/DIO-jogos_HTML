@@ -86,3 +86,91 @@ div{
     color: transparent;
 }
 
+.grid{
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+}
+
+.grid>div{
+    text-align: center;
+}
+
+.exemplo4{
+    width: 300px;
+    height: 300px;
+    color: white;
+    border: 6px dashed darkcyan;
+    padding: 30px;
+    font-size: 130px;
+    font-weight: 900;
+    background-color: crimson;
+    background-image: url(../imagens/paisagem-florestal_71767-127.avif);
+    text-align: center;
+
+}
+
+#blend-mode-01{
+    background-blend-mode: multiply;
+}
+
+#blend-mode-02{
+    background-blend-mode: screen;
+}
+
+#blend-mode-03{
+    background-blend-mode: overlay;
+}
+
+#blend-mode-04{
+    background-blend-mode: color;
+}
+
+#blend-mode-05{
+    background-blend-mode: color-burn;
+
+}
+
+#blend-mode-06{
+    background-blend-mode: color-dodge;
+}
+
+#blend-mode-07{
+    background-blend-mode: darken;
+}
+
+#blend-mode-08{
+    background-blend-mode: difference ;
+}
+
+#blend-mode-09{
+    background-blend-mode: exclusion;
+}
+
+#blend-mode-10{
+    background-blend-mode: hard-light;
+}
+
+#blend-mode-11{
+    background-blend-mode: hue;
+}
+
+#blend-mode-12{
+    background-blend-mode: lighten;
+}
+
+#blend-mode-13{
+    background-blend-mode: luminosity;
+}
+
+#blend-mode-14{
+    background-blend-mode: normal;
+}
+
+#blend-mode-15{
+    background-blend-mode: saturation;
+}
+
+#blend-mode-16{
+    background-blend-mode: soft-light;
+}
+
