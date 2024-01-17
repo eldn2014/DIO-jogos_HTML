@@ -50,7 +50,7 @@
              <p>Na representação hexadecimal o numero é formado por 6 digitos, onde os 2 primeiros representam o vermelho, os 2 do meio o verde e os 2 ultimos o azul. <br>
                  o seu valor varia de 0 a 15, porem quando chegamos no 10 ele passa a ser representado por letras. sendo assim o valor pode assuimir de 0 a F: <br>
                  <div>0  |  1  |  2  |  3  |  4  |  6  |  7  |  8  |  9  |  10 |  11 |  12 |  13 |  14 |  15</div><br>
-                 <div> 0  |  1  |  2  |  3  |  4  |  6  |  7  |  8  |  9  |  A  |  B  |  C  |  D  |  E  |  F </div>
+                 <div> 0  |  1  |  2  |  3  |  4  |  6  |  7  |  8  |  9  |  A &nbsp;&nbsp;| B&nbsp;&nbsp;|  C &nbsp; |  D  &nbsp;|  E  |  F </div>
 
                   A representação ficará da seguinte forma: <br>
                  <strong>#05ca37</strong> <br>
@@ -81,30 +81,43 @@
                o object-fit vai determinar como uma imagem ou video será dimensionado para caber dentro do conteiner. <br>
                 Cada valor assume uma formatação diferente.
             </p>
-                <Code>object-fit: fill;</Code> <br>
-                <div id="div-fill">
-                    <img src="assets/imagens/paisagem-florestal_71767-127.avif" id="fill">
-                </div> <br>
+                
+            <div class="grid">
+                <div>
+                    <Code>object-fit: fill;</Code> <br>
+                    <div id="div-fill">
+                        <img src="assets/imagens/paisagem-florestal_71767-127.avif" id="fill">
+                    </div><br> <br>
+                </div>
 
-                <Code>object-fit: contain</Code> <br>
-                <div id="div-contain">
-                    <img src="assets/imagens/paisagem-florestal_71767-127.avif" id="contain">
-                </div> <br>
+                <div>    
+                    <Code>object-fit: contain</Code> <br>
+                    <div id="div-contain">
+                        <img src="assets/imagens/paisagem-florestal_71767-127.avif" id="contain">
+                    </div><br> <br>
+                </div> 
 
-                <Code>object-fit: cover</Code> <br>
-                <div id="div-cover">
-                    <img src="assets/imagens/paisagem-florestal_71767-127.avif" id="cover">
-                </div> <br>
+                <div>
+                    <Code>object-fit: cover</Code> <br>
+                    <div id="div-cover">
+                        <img src="assets/imagens/paisagem-florestal_71767-127.avif" id="cover">
+                    </div><br> <br>
+                </div>
 
-                <Code>object-fit: none</Code> <br>
-                <div id="div-none">
-                    <img src="assets/imagens/paisagem-florestal_71767-127.avif" id="none">
-                </div> <br>
+                <div>
+                    <Code>object-fit: none</Code> <br>
+                    <div id="div-none">
+                        <img src="assets/imagens/paisagem-florestal_71767-127.avif" id="none">
+                    </div><br> <br>
+                </div>
 
-                <Code>object-fit: Scale-down</Code> <br>
-                <div id="div-Scale-down">
-                    <img src="assets/imagens/paisagem-florestal_71767-127.avif" id="Scale-down">
-                </div> <br>
+                <div>
+                    <Code>object-fit: Scale-down</Code> <br>
+                    <div id="div-Scale-down">
+                        <img src="assets/imagens/paisagem-florestal_71767-127.avif" id="Scale-down">
+                    </div><br> <br>
+                </div>
+             </div>
 
         <h3>Propriedade Object-Position</h3>
             <p>
@@ -162,37 +175,43 @@
 
 
         <h3>Redimensionando as imagens</h3>
+            <div class="grid">
+                <div>
+                    <code>background-size: auto;</code>
+                    <div class="exe-bksize"></div><br><br>
+                </div>
 
-            <p></p>
-            <code>background-size: auto;</code>
-            <div class="exe-bksize"></div>
+                <div>
+                    <code>background-size: cover;</code>
+                    <div class="exe-bksize" id="bk-cover"></div><br><br>
+                </div>
 
-            <p></p>
-            <code>background-size: cover;</code>
-            <div class="exe-bksize" id="bk-cover"></div>
-
-            <p></p>
-            <code>background-size: contain;</code>
-            <div class="exe-bksize" id="bk-contain"></div>
-
-            <p></p>
-            <code>background-size: 50%;  | ou |  background-size: 200px;</code>
-            <div class="exe-bksize" id="bk-tamanho"></div>
-
-            <p></p>
-            <code>background-size: 200px 250px;</code>
-            <div class="exe-bksize" id="bk-exemplo-x-y"></div>
-
-            <p></p>
-            <code>background-image: url(../imagens/leaves-5949884_1280.png),url(../imagens/paisagem-florestal_71767-127.avif); <br>
-                  background-size: 100px , cover;</code>
-            <div class="exe-bksize" id="bk-exemplodecamadas"></div>
+                <div>
+                    <code>background-size: contain;</code>
+                    <div class="exe-bksize" id="bk-contain"></div><br><br>
+                </div>
+                
+                <div>
+                    <code>background-size: 50%;  | ou |  background-size: 200px;</code>
+                    <div class="exe-bksize" id="bk-tamanho"></div><br><br>
+                </div>
+                
+                <div>
+                    <code>background-size: 200px 250px;</code>
+                    <div class="exe-bksize" id="bk-exemplo-x-y"></div><br><br>
+                </div>
+                
+                <div>
+                    <code>background-image: url(../imagens/leaves-5949884_1280.png),<br> url(../imagens/paisagem-florestal_71767-127.avif); <br>
+                        background-size: 100px , cover;</code>
+                    <div class="exe-bksize" id="bk-exemplodecamadas"></div><br><br>
+                </div>
+            </div>
 
         <h3>Repetição de Imagens</h3>
 
             <p>o background repeat serve para repetir uma imagem uma determinada quantidade de vezes. <br>
-            
-            </p>
+             </p>
             <code></code>
             <div class="exe-bksize" id="bk-repeat01"></div> <br> <br>
 

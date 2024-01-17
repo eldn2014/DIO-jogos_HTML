@@ -204,7 +204,7 @@
 
 .grid-1{
     display: grid;
-    grid-template-columns: 400px 400px;
+    grid-template-columns: auto auto;
 }
 
 .grid-1>div{
@@ -417,4 +417,30 @@ img{
     border-image-repeat: space;
 }
 
+#bis-14{
+   
+    border-image-source:url(../imagens/STARS.png);
+    border-image-slice: 170;
+    border-image-width: 46px;
+    border-image-repeat:round ;
+    border-image-outset: 30px ;
+}
 
+
+#bis-15{
+   
+    border-image-source:url(../imagens/STARS.png);
+    border-image-slice: 170;
+    border-image-width: 46px;
+    border-image-repeat:round ;
+    border-image-outset: 17px 35px;
+}
+
+#bis-16{
+   
+    border-image: 
+    url(../imagens/STARS.png) /*Define a imagem ou gradiente*/
+    170 / 46px / 1px          /*define o Slice | Width | outset*/
+    round                     /*define o repeat*/
+
+}

@@ -170,3 +170,23 @@
 
 }
 
+.grid{
+    display: grid ;
+    grid-template-columns:  auto auto auto;
+    
+    
+}
+
+.grid>div{
+    text-align: center;
+    margin: auto;
+    
+    
+}
+
+.grid>div>div{
+    text-align: center;
+    margin: auto;
+    
+    
+}
