@@ -214,6 +214,9 @@
 
     color: blue;
 }
+.grid-1>div>div{
+    margin: auto;
+}
 
 
 
@@ -317,10 +320,17 @@
 
 }
 
+img{
+    margin: auto;
+    width: 300px;
+
+}
+
+
 .exemplo7{
     width: 300px;
     height: 300px;
-    background-color: darkkhaki;
+    background-color: black;
     border: 20px solid;
  
 }
@@ -337,7 +347,74 @@
     border-image-source:none ;
 }
 
+#bis-04{
+   
+    border-image-source:url(../imagens/STARS.png);
+    border-image-slice: 160;
+}
+
+#bis-05{
+    border-image-source:url(../imagens/STARS.png);
+    border-image-slice: 160 fill;
+}
+
+#bis-06{
+    border-image-source:linear-gradient(aqua, blue) ;
+    border-image-slice: 100px;
+}
 
 
+#bis-07{
+   
+    border-image-source:url(../imagens/STARS.png);
+    border-image-slice: 160;
+    border-image-width: 60px;
+}
+
+#bis-08{
+   
+    border-image-source:url(../imagens/STARS.png);
+    border-image-slice: 160;
+    border-image-width: 60px 120px;
+}
+
+#bis-09{
+   
+    border-image-source:url(../imagens/STARS.png);
+    border-image-slice: 160;
+    border-image-width: 60px 120px 45%;
+}
+
+#bis-10{
+   
+    border-image-source:url(../imagens/STARS.png);
+    border-image-slice: 170;
+    border-image-width: 46px;
+    border-image-repeat: repeat;
+}
+
+#bis-11{
+   
+    border-image-source:url(../imagens/STARS.png);
+    border-image-slice: 170;
+    border-image-width: 41px;
+    border-image-repeat: stretch;
+}
+
+#bis-12{
+   
+    border-image-source:url(../imagens/STARS.png);
+    border-image-slice: 170;
+    border-image-width: 46px;
+    border-image-repeat:round ;
+}
+
+#bis-13{
+   
+    border-image-source:url(../imagens/STARS.png);
+    border-image-slice: 170;
+    border-image-width: 49px;
+    border-image-repeat: space;
+}
 
 

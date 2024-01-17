@@ -292,23 +292,110 @@
             <h3>Border imagem source</h3>
             <p>Essa Propiedade serve para por imagens nas bordas</p>
 
-            <div class="grid">
-                <div>
-                  <p>border-image-source: url(../imagens/leaves-5949884_1280.png);</p>
-                  <div class="exemplo7" id="bis-01"></div> 
+                <div class="grid">
+                    <div>
+                    <p>border-image-source: url(../imagens/leaves-5949884_1280.png);</p>
+                    <div class="exemplo7" id="bis-01"></div> 
+                    </div>
+
+                    <div>
+                        <p>border-image-source: linear-gradient(aqua,blue);</p>
+                        <div class="exemplo7" id="bis-02"></div> 
+                    </div>
+
+                    <div>
+                        <p>border-image-source:none ;</p>
+                        <div class="exemplo7" id="bis-03"></div> 
+                    </div>
+
                 </div>
 
-                <div>
-                    <p>border-image-source: linear-gradient(aqua,blue);</p>
-                    <div class="exemplo7" id="bis-02"></div> 
-                  </div>
-
-                <div>
-                    <p>border-image-source:none ;</p>
-                    <div class="exemplo7" id="bis-03"></div> 
+            
+            <h3>Border Image Slice</h3>
+                <p>A propriedade tem como função fatiar a imagem desejada em 9 pedaços, onde a imagem abaixo ilustra bem essa divisão: <br></p>
+                <div class="grid-1">
+                    <img src="assets/imagens/border-image-slice.png" alt="border_image_slice">
+                    <ul>
+                        <li>Os Cantos 1,2,3 e 4 serão definidos como os cantos da borda</li> <br>
+                        <li>Os lados 5,6,7 e 8 serão definidos como as laterais onde serão esticados para melhor design e dimensionamento.</li> <br>
+                        <li>O centro 9 será descartado por padrão mas com o atributo fill poderá retornar a imagem.</li>
+                    </ul>
                 </div>
 
-            </div>
+                <br><br>
+
+                <div class="grid">
+
+                    <div>
+                    <p>border-image-slice: 160;</p>
+                    <div class="exemplo7" id="bis-04"></div> 
+                    </div>
+
+                    <div>
+                        <p>border-image-slice: 160 fill;</p>
+                        <div class="exemplo7" id="bis-05"></div> 
+                    </div>
+
+                    <div>
+                        <p>border-image-source:linear-gradient(aqua, blue) ;<br>
+                            border-image-slice: 10;</p>
+                        <div class="exemplo7" id="bis-06"></div> 
+                    </div>
+
+                </div>
+
+                <p>Note que quando usamos o gradiente, o slice desloca apenas a intersecção do gradiente </p>
+
+            <h3>Border Image Widht</h3>
+                <p>Com o border image widht, nos conseguimos mudar a largura da imagem dentro dessa borda.</p>
+
+                <div class="grid">
+
+                    <div>
+                    <p>border-image-width: 60px;</p>
+                    <div class="exemplo7" id="bis-07"></div> 
+                    </div>
+
+                    <div>
+                        <p>border-image-width: 60px 120px;</p>
+                        <div class="exemplo7" id="bis-08"></div> 
+                    </div>
+
+                    <div>
+                        <p>border-image-width: 60px 120px 45%;</p>
+                        <div class="exemplo7" id="bis-09"></div> 
+                    </div>
+
+                </div>
+
+            <h3>Border Image Repeat</h3>
+                <p>como cimos acima o modelo de seter uma imagem na borda é bem util, porem as imagens ficaram desproporcionais,
+                    com o border repeat nos conseguimos fazer com que as laterais seja repetidas e não mais esticadas.</p>
+
+                <div class="grid">
+
+                    <div>
+                    <p>border-image-repeat: repeat;</p>
+                    <div class="exemplo7" id="bis-10"></div> <br><br>
+                    </div>
+
+                    <div>
+                        <p>border-image-repeat: stretch;</p>
+                        <div class="exemplo7" id="bis-11"></div> <br><br>
+                    </div>
+
+                    <div>
+                        <p>border-image-repeat:round ;</p>
+                        <div class="exemplo7" id="bis-12"></div> <br><br>
+                    </div>
+
+
+                    <div>
+                        <p>border-image-repeat: space;</p>
+                        <div class="exemplo7" id="bis-13"></div> <br><br>
+                    </div>
+
+                </div>
 
 
 
