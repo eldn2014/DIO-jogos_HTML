@@ -87,12 +87,17 @@ div{
 }
 
 .grid{
-    display: grid;
-    grid-template-columns: 400px 400px 400px;
+    display: grid ;
+    grid-template-columns:  auto auto auto;
+    
+    
 }
 
 .grid>div{
     text-align: center;
+    margin: auto;
+    
+    
 }
 
 .exemplo4{
@@ -208,3 +213,92 @@ div{
 
     color: blue;
 }
+
+
+
+.exemplo6{
+    width: 300px;
+    height: 300px;
+    color: greenyellow;
+    font-size: 130px;
+    font-weight: 900;
+    background-color: crimson;
+    border-width: 10px;
+    
+    
+}
+
+#border-01{
+
+    border-style: dashed;
+}
+
+#border-02{
+
+    border-style:dotted ;
+
+}
+
+#border-03{
+
+    border-style: double;
+
+}
+
+#border-04{
+
+    border-style: groove;
+
+}
+
+#border-05{
+
+    border-style: hidden;
+
+}
+
+#b1-b{
+    border-style: double;
+}
+
+#border-06{
+
+    border-style: inherit;
+
+}
+
+#border-07{
+
+    border-style:inset ;
+
+}
+
+#border-08{
+
+    border-style: outset;
+
+}
+
+#border-09{
+
+    border-style: ridge;
+
+}
+
+#border-10{
+
+    border-style: solid;
+
+}
+
+#border-11{
+   
+    border: 10px solid aqua;
+
+}
+
+
+
+
+
+
