@@ -96,7 +96,7 @@
 
 .grid>div>div{
     text-align: center;
-    margin: auto;
+    margin: auto 5px;
     
     
 }
